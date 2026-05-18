@@ -1,0 +1,9 @@
+<h1 class="title ms-4">Result</h1>
+<ul class="list-group ms-4">
+  <li class="list-group-item">Resolve time : <%= @score[:time] %> sec</li>
+  <li class="list-group-item">Car # : <%= @score[:length] %></li>
+  <li class="list-group-item">Score : <%= @score[:score] %></li>
+  <li class="list-group-item list-group-item-info" id="result"><%= @score[:message] %></li>
+</ul>
+<p></p>
+<%= link_to "Try again", new_path, class: "ms-4 btn btn-primary" %>
